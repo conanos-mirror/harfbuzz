@@ -1,93 +1,58 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from conans import ConanFile, CMake, tools
-from conans.tools import SystemPackageTool
+from conans import ConanFile, CMake, tools, AutoToolsBuildEnvironment
+from shutil import copyfile
 import os
 
 
 class HarfbuzzConan(ConanFile):
     name = "harfbuzz"
-    version = "1.7.6"
+    version = "1.7.5"
     description = "HarfBuzz is an OpenType text shaping engine."
-    homepage = "http://harfbuzz.org"
-    url = "http://github.com/bincrafters/conan-harfbuzz"
+    url = "https://github.com/conanos/harfbuzz"
+    homepage = "http://harfbuzz.org/"
     license = "MIT"
-    author = "Bincrafters <bincrafters@gmail.com>"
-    settings = "os", "arch", "compiler", "build_type"
-    generators = "cmake"
-    short_paths = True
+    exports = ["LICENSE.md"]
+    settings = "os", "compiler", "build_type", "arch"
     options = {
-        "shared": [True, False],
-        "fPIC": [True, False],
-        "with_freetype": [True, False]
+        'shared': [True, False],
+        'fPIC': [True, False],
+        'with_freetype': [True, False]
     }
-    default_options = ("shared=False", "fPIC=True", "with_freetype=False")
-    exports_sources = ("CMakeLists.txt", "cmake.patch")
-    exports = ["FindHarfBuzz.cmake", "LICENSE.md"]
+    default_options = ("shared=True", "fPIC=True", "with_freetype=False")
+    generators = "cmake"
+    requires = ("fontconfig/2.12.6@conanos/dev","cairo/1.14.12@conanos/dev","glib/2.58.0@conanos/dev",)
+
     source_subfolder = "source_subfolder"
-    build_subfolder = "build_subfolder"
-
-    def build_requirements(self):
-        if tools.OSInfo().is_linux:
-            installer = SystemPackageTool()
-            installer.install("ragel")
-
-    def requirements(self):
-        if self.options.with_freetype:
-            self.requires.add("freetype/2.9.0@conanos/testing")
-
-    def configure(self):
-        del self.settings.compiler.libcxx
-
-    def config_options(self):
-        if self.settings.os == "Windows":
-            del self.options.fPIC
 
     def source(self):
-        source_url = "https://github.com/harfbuzz/harfbuzz"
-        tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version))
+        url_ = 'http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-{version}.tar.bz2'.format(version=self.version)
+        tools.get(url_)
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self.source_subfolder)
-        tools.patch(base_path=self.source_subfolder, patch_file="cmake.patch")
-
-    def configure_cmake_compiler_flags(self, cmake):
-        flags = []
-        compiler = str(self.settings.compiler)
-        if compiler in ("clang", "apple-clang"):
-            flags.append("-Wno-deprecated-declarations")
-        cmake.definitions["CMAKE_C_FLAGS"] = " ".join(flags)
-        cmake.definitions["CMAKE_CXX_FLAGS"] = cmake.definitions["CMAKE_C_FLAGS"]
-        return cmake
-
-    def configure_cmake_macos(self, cmake):
-        if str(self.settings.os) in ["Macos", "iOS", "watchOS", "tvOS"]:
-            cmake.definitions["CMAKE_MACOSX_RPATH"] = True
-        return cmake
-
-    def configure_cmake(self):
-        cmake = CMake(self)
-        cmake = self.configure_cmake_compiler_flags(cmake)
-        cmake = self.configure_cmake_macos(cmake)
-        if self.settings.os != "Windows":
-            cmake.definitions['CMAKE_POSITION_INDEPENDENT_CODE'] = self.options.fPIC
-        cmake.definitions["HB_HAVE_FREETYPE"] = self.options.with_freetype
-        cmake.configure(build_folder=self.build_subfolder)
-        return cmake
 
     def build(self):
-        cmake = self.configure_cmake()
-        cmake.build()
+        with tools.chdir(self.source_subfolder):
+            with tools.environment_append({
+                'PKG_CONFIG_PATH': ':%s/lib/pkgconfig:%s/lib/pkgconfig:%s/lib/pkgconfig'
+                %(self.deps_cpp_info['fontconfig'].rootpath,
+                self.deps_cpp_info['cairo'].rootpath,
+                self.deps_cpp_info['glib'].rootpath,)}):
+                
+                _args = ['--prefix=%s/builddir'%(os.getcwd()), '--libdir=%s/builddir/lib'%(os.getcwd()),
+                    '--disable-silent-rules', '--enable-introspection', '--with-icu=no']
+                if self.options.shared:
+                    _args.extend(['--enable-shared=yes','--enable-static=no'])
+                else:
+                    _args.extend(['--enable-shared=no','--enable-static=yes'])
+
+                self.run('./configure %s'%(' '.join(_args)))#space
+                self.run('make -j2')
+                self.run('make install')
+
 
     def package(self):
-        self.copy("FindHarfBuzz.cmake")
-        self.copy("COPYING", dst="licenses", src=self.source_subfolder)
-        cmake = self.configure_cmake()
-        cmake.install()
+        if tools.os_info.is_linux:
+            with tools.chdir(self.source_subfolder):
+                self.copy("*", src="%s/builddir"%(os.getcwd()))
 
     def package_info(self):
         self.cpp_info.libs = tools.collect_libs(self)
-        if self.settings.os == "Linux":
-            self.cpp_info.libs.append("m")
-        if self.settings.compiler == 'Visual Studio' and not self.options.shared:
-            self.cpp_info.libs.extend(["dwrite", "rpcrt4", "usp10"])
