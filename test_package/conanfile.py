@@ -10,6 +10,8 @@ class TestPackageConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
+        if self.settings.os == "Linux":
+            cmake.definitions["CMAKE_MODULE_PATH"]=os.path.abspath(os.path.join(self.source_folder,".."))
         cmake.configure()
         cmake.build()
 

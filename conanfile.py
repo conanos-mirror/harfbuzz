@@ -1,70 +1,90 @@
-from conans import ConanFile, CMake, tools, AutoToolsBuildEnvironment
-from shutil import copyfile
+from conans import ConanFile, CMake, tools
+from conanos.build import config_scheme
 import os
+import shutil
 
 
 class HarfbuzzConan(ConanFile):
     name = "harfbuzz"
-    version = "1.7.5"
+    version = "2.1.3"
     description = "HarfBuzz is an OpenType text shaping engine."
     url = "https://github.com/conanos/harfbuzz"
     homepage = "http://harfbuzz.org/"
     license = "MIT"
-    exports = ["LICENSE.md"]
+    exports = ["FindHarfBuzz.cmake", "LICENSE.md"]
+    generators = "cmake"
     settings = "os", "compiler", "build_type", "arch"
     options = {
         'shared': [True, False],
         'fPIC': [True, False],
         'with_freetype': [True, False]
     }
-    default_options = ("shared=True", "fPIC=True", "with_freetype=True")
+    default_options = { 'shared': False, 'fPIC': True, 'with_freetype': True }
     generators = "cmake"
-    requires = ("fontconfig/2.12.6@conanos/dev","cairo/1.14.12@conanos/dev","glib/2.58.0@conanos/dev",
-    "freetype/2.9.0@conanos/dev",
-    "pixman/0.34.0@conanos/dev",#required by 'cairo' 
-    "libpng/1.6.34@conanos/dev"#required by 'freetype2'
-    )
 
-    source_subfolder = "source_subfolder"
+    _source_subfolder = "source_subfolder"
+    _build_subfolder = "build_subfolder"
+
+    def requirements(self):
+        if self.options.with_freetype:
+            self.requires.add("freetype/2.9.1@conanos/stable")
+
+        self.requires.add("fontconfig/2.13.0@conanos/stable")
+        self.requires.add("cairo/1.15.12@conanos/stable")
+        self.requires.add("glib/2.58.1@conanos/stable")
+
+        config_scheme(self)
+    
+    def build_requirements(self):
+        if self.settings.os == "Linux":
+            self.build_requires("bzip2/1.0.6@conanos/stable")
+            self.build_requires("libpng/1.6.34@conanos/stable")
+    
+    def config_options(self):
+        if self.settings.os == "Windows":
+            del self.options.fPIC
+        
+    
+    def configure(self):
+        del self.settings.compiler.libcxx
 
     def source(self):
-        url_ = 'http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-{version}.tar.bz2'.format(version=self.version)
+        url_ = 'https://github.com/harfbuzz/harfbuzz/archive/{version}.tar.gz'.format(version=self.version)
         tools.get(url_)
-        extracted_dir = self.name + "-" + self.version
-        os.rename(extracted_dir, self.source_subfolder)
+        os.rename(self.name+"-"+self.version, self._source_subfolder)
+
+    def configure_cmake(self):
+        cmake = CMake(self)
+        pkg_config_paths=[ os.path.join(self.deps_cpp_info[i].rootpath, "lib", "pkgconfig") for i in ["fontconfig","cairo","glib"] ]
+        if self.options.with_freetype:
+            pkg_config_paths.extend([ os.path.join(self.deps_cpp_info[i].rootpath, "lib", "pkgconfig") for i in ["freetype"] ])
+            cmake.definitions["CMAKE_PREFIX_PATH"] = os.path.join(self.deps_cpp_info["freetype"].rootpath)
+
+        cmake.definitions["HB_HAVE_FREETYPE"] = self.options.with_freetype
+        cmake.definitions["HB_HAVE_GLIB"] = True
+        cmake.definitions["HB_BUILD_UTILS"] = True
+        cmake.definitions["PC_CAIRO_INCLUDE_DIRS"] = os.path.join(self.deps_cpp_info["cairo"].rootpath, "include")
+        cmake.definitions["PC_CAIRO_LIBDIR"] = os.path.join(self.deps_cpp_info["cairo"].rootpath, "lib")
+        cmake.definitions["HB_HAVE_GOBJECT"] = True
+        cmake.definitions["PC_glib_mkenums"] =  os.path.join(self.deps_cpp_info["glib"].rootpath, "bin") #for glib-mkenums
+        cmake.definitions["BUILD_SHARED_LIBS"] = self.options.shared
+        if self.settings.os == "Linux":
+            cmake.definitions['CONAN_CMAKE_POSITION_INDEPENDENT_CODE'] = self.options.fPIC
+        cmake.configure(build_folder=self._build_subfolder, source_folder=self._source_subfolder,pkg_config_paths=pkg_config_paths)
+        return cmake
 
     def build(self):
-        with tools.chdir(self.source_subfolder):
-            with tools.environment_append({
-                'PKG_CONFIG_PATH': ':%s/lib/pkgconfig:%s/lib/pkgconfig:%s/lib/pkgconfig:%s/lib/pkgconfig:%s/lib/pkgconfig:%s/lib/pkgconfig'
-                %(self.deps_cpp_info['fontconfig'].rootpath,
-                self.deps_cpp_info['cairo'].rootpath,
-                self.deps_cpp_info['glib'].rootpath,
-                self.deps_cpp_info['freetype'].rootpath,
-                self.deps_cpp_info['pixman'].rootpath,
-                self.deps_cpp_info['libpng'].rootpath,
-                )}):
-                
-                _args = ['--prefix=%s/builddir'%(os.getcwd()), '--libdir=%s/builddir/lib'%(os.getcwd()),
-                    '--disable-silent-rules', '--enable-introspection', '--with-icu=no',]
-                if self.options.shared:
-                    _args.extend(['--enable-shared=yes','--enable-static=no'])
-                else:
-                    _args.extend(['--enable-shared=no','--enable-static=yes'])
-                if self.options.with_freetype:
-                    _args.extend(['--with-freetype=yes'])
-                else:
-                    _args.extend(['--with-freetype=no'])
-
-                self.run('./configure %s'%(' '.join(_args)))#space
-                self.run('make -j2')
-                self.run('make install')
-
-
-    def package(self):
-        if tools.os_info.is_linux:
-            with tools.chdir(self.source_subfolder):
-                self.copy("*", src="%s/builddir"%(os.getcwd()))
+        include = [ os.path.join(self.deps_cpp_info[i].rootpath, "include") for i in ["fontconfig"] ]
+        libpath=[ os.path.join(self.deps_cpp_info[i].rootpath, "lib") for i in ["bzip2", "libpng"] ]
+        if self.settings.os == "Linux":
+            tools.mkdir(os.path.join(self.build_folder, self._build_subfolder, "src"))
+        with tools.environment_append({
+            "LD_LIBRARY_PATH" : os.pathsep.join(libpath),
+            "CPLUS_INCLUDE_PATH" : include,
+            }):
+            cmake = self.configure_cmake()
+            cmake.build()
+            cmake.install()
 
     def package_info(self):
         self.cpp_info.libs = tools.collect_libs(self)
