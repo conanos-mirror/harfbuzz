@@ -1,0 +1,2728 @@
+diff -Nur harfbuzz-2.1.3/COPYING harfbuzz-2.1.3-nocopyright/COPYING
+--- harfbuzz-2.1.3/COPYING	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/COPYING	2018-11-27 04:54:16.933843728 -0800
+@@ -2,17 +2,17 @@
+ For parts of HarfBuzz that are licensed under different licenses see individual
+ files names COPYING in subdirectories where applicable.
+ 
+-Copyright © 2010,2011,2012  Google, Inc.
+-Copyright © 2012  Mozilla Foundation
+-Copyright © 2011  Codethink Limited
+-Copyright © 2008,2010  Nokia Corporation and/or its subsidiary(-ies)
+-Copyright © 2009  Keith Stribley
+-Copyright © 2009  Martin Hosken and SIL International
+-Copyright © 2007  Chris Wilson
+-Copyright © 2006  Behdad Esfahbod
+-Copyright © 2005  David Turner
+-Copyright © 2004,2007,2008,2009,2010  Red Hat, Inc.
+-Copyright © 1998-2004  David Turner and Werner Lemberg
++Copyright  2010,2011,2012  Google, Inc.
++Copyright  2012  Mozilla Foundation
++Copyright  2011  Codethink Limited
++Copyright  2008,2010  Nokia Corporation and/or its subsidiary(-ies)
++Copyright  2009  Keith Stribley
++Copyright  2009  Martin Hosken and SIL International
++Copyright  2007  Chris Wilson
++Copyright  2006  Behdad Esfahbod
++Copyright  2005  David Turner
++Copyright  2004,2007,2008,2009,2010  Red Hat, Inc.
++Copyright  1998-2004  David Turner and Werner Lemberg
+ 
+ For full copyright notices consult the individual files in the package.
+ 
+diff -Nur harfbuzz-2.1.3/src/dump-indic-data.cc harfbuzz-2.1.3-nocopyright/src/dump-indic-data.cc
+--- harfbuzz-2.1.3/src/dump-indic-data.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/dump-indic-data.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/dump-khmer-data.cc harfbuzz-2.1.3-nocopyright/src/dump-khmer-data.cc
+--- harfbuzz-2.1.3/src/dump-khmer-data.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/dump-khmer-data.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/dump-myanmar-data.cc harfbuzz-2.1.3-nocopyright/src/dump-myanmar-data.cc
+--- harfbuzz-2.1.3/src/dump-myanmar-data.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/dump-myanmar-data.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/dump-use-data.cc harfbuzz-2.1.3-nocopyright/src/dump-use-data.cc
+--- harfbuzz-2.1.3/src/dump-use-data.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/dump-use-data.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-ankr-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-ankr-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-ankr-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-ankr-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-bsln-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-bsln-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-bsln-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-bsln-table.hh	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout.cc harfbuzz-2.1.3-nocopyright/src/hb-aat-layout.cc
+--- harfbuzz-2.1.3/src/hb-aat-layout.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-common.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-common.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-common.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-common.hh	2018-11-27 04:54:16.101817203 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-feat-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-feat-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-feat-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-feat-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-just-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-just-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-just-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-just-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-kerx-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-kerx-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-kerx-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-kerx-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Ebrahim Byagowi
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-lcar-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-lcar-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-lcar-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-lcar-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-morx-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-morx-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-morx-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-morx-table.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-layout-trak-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-trak-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-layout-trak-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-layout-trak-table.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Ebrahim Byagowi
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-ltag-table.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-ltag-table.hh
+--- harfbuzz-2.1.3/src/hb-aat-ltag-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-ltag-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-map.cc harfbuzz-2.1.3-nocopyright/src/hb-aat-map.cc
+--- harfbuzz-2.1.3/src/hb-aat-map.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-map.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2011,2013  Google, Inc.
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2010,2011,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-aat-map.hh harfbuzz-2.1.3-nocopyright/src/hb-aat-map.hh
+--- harfbuzz-2.1.3/src/hb-aat-map.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-aat-map.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-atomic.hh harfbuzz-2.1.3-nocopyright/src/hb-atomic.hh
+--- harfbuzz-2.1.3/src/hb-atomic.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-atomic.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2007  Chris Wilson
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2007  Chris Wilson
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-blob.cc harfbuzz-2.1.3-nocopyright/src/hb-blob.cc
+--- harfbuzz-2.1.3/src/hb-blob.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-blob.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-blob.h harfbuzz-2.1.3-nocopyright/src/hb-blob.h
+--- harfbuzz-2.1.3/src/hb-blob.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-blob.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
++ * Copyright  2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-blob.hh harfbuzz-2.1.3-nocopyright/src/hb-blob.hh
+--- harfbuzz-2.1.3/src/hb-blob.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-blob.hh	2018-11-27 04:54:16.089816823 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer.cc harfbuzz-2.1.3-nocopyright/src/hb-buffer.cc
+--- harfbuzz-2.1.3/src/hb-buffer.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 1998-2004  David Turner and Werner Lemberg
+- * Copyright © 2004,2007,2009,2010  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  1998-2004  David Turner and Werner Lemberg
++ * Copyright  2004,2007,2009,2010  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer-deserialize-json.hh harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-json.hh
+--- harfbuzz-2.1.3/src/hb-buffer-deserialize-json.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-json.hh	2018-11-27 04:54:16.057815801 -0800
+@@ -1,7 +1,7 @@
+ 
+ #line 1 "hb-buffer-deserialize-json.rl"
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer-deserialize-json.rl harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-json.rl
+--- harfbuzz-2.1.3/src/hb-buffer-deserialize-json.rl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-json.rl	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer-deserialize-text.hh harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-text.hh
+--- harfbuzz-2.1.3/src/hb-buffer-deserialize-text.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-text.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,7 +1,7 @@
+ 
+ #line 1 "hb-buffer-deserialize-text.rl"
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer-deserialize-text.rl harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-text.rl
+--- harfbuzz-2.1.3/src/hb-buffer-deserialize-text.rl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer-deserialize-text.rl	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer.h harfbuzz-2.1.3-nocopyright/src/hb-buffer.h
+--- harfbuzz-2.1.3/src/hb-buffer.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 1998-2004  David Turner and Werner Lemberg
+- * Copyright © 2004,2007,2009  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  1998-2004  David Turner and Werner Lemberg
++ * Copyright  2004,2007,2009  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer.hh harfbuzz-2.1.3-nocopyright/src/hb-buffer.hh
+--- harfbuzz-2.1.3/src/hb-buffer.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 1998-2004  David Turner and Werner Lemberg
+- * Copyright © 2004,2007,2009,2010  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  1998-2004  David Turner and Werner Lemberg
++ * Copyright  2004,2007,2009,2010  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-buffer-serialize.cc harfbuzz-2.1.3-nocopyright/src/hb-buffer-serialize.cc
+--- harfbuzz-2.1.3/src/hb-buffer-serialize.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-buffer-serialize.cc	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012,2013  Google, Inc.
++ * Copyright  2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-cache.hh harfbuzz-2.1.3-nocopyright/src/hb-cache.hh
+--- harfbuzz-2.1.3/src/hb-cache.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-cache.hh	2018-11-27 04:54:16.101817203 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-common.cc harfbuzz-2.1.3-nocopyright/src/hb-common.cc
+--- harfbuzz-2.1.3/src/hb-common.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-common.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-common.h harfbuzz-2.1.3-nocopyright/src/hb-common.h
+--- harfbuzz-2.1.3/src/hb-common.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-common.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-coretext.cc harfbuzz-2.1.3-nocopyright/src/hb-coretext.cc
+--- harfbuzz-2.1.3/src/hb-coretext.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-coretext.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2012,2013  Mozilla Foundation.
+- * Copyright © 2012,2013  Google, Inc.
++ * Copyright  2012,2013  Mozilla Foundation.
++ * Copyright  2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-coretext.h harfbuzz-2.1.3-nocopyright/src/hb-coretext.h
+--- harfbuzz-2.1.3/src/hb-coretext.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-coretext.h	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Mozilla Foundation.
++ * Copyright  2012  Mozilla Foundation.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-debug.hh harfbuzz-2.1.3-nocopyright/src/hb-debug.hh
+--- harfbuzz-2.1.3/src/hb-debug.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-debug.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-deprecated.h harfbuzz-2.1.3-nocopyright/src/hb-deprecated.h
+--- harfbuzz-2.1.3/src/hb-deprecated.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-deprecated.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-directwrite.cc harfbuzz-2.1.3-nocopyright/src/hb-directwrite.cc
+--- harfbuzz-2.1.3/src/hb-directwrite.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-directwrite.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2015-2018  Ebrahim Byagowi
++ * Copyright  2015-2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-directwrite.h harfbuzz-2.1.3-nocopyright/src/hb-directwrite.h
+--- harfbuzz-2.1.3/src/hb-directwrite.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-directwrite.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2015  Ebrahim Byagowi
++ * Copyright  2015  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-dsalgs.hh harfbuzz-2.1.3-nocopyright/src/hb-dsalgs.hh
+--- harfbuzz-2.1.3/src/hb-dsalgs.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-dsalgs.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-face.cc harfbuzz-2.1.3-nocopyright/src/hb-face.cc
+--- harfbuzz-2.1.3/src/hb-face.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-face.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-face.h harfbuzz-2.1.3-nocopyright/src/hb-face.h
+--- harfbuzz-2.1.3/src/hb-face.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-face.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
++ * Copyright  2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-face.hh harfbuzz-2.1.3-nocopyright/src/hb-face.hh
+--- harfbuzz-2.1.3/src/hb-face.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-face.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-fallback-shape.cc harfbuzz-2.1.3-nocopyright/src/hb-fallback-shape.cc
+--- harfbuzz-2.1.3/src/hb-fallback-shape.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-fallback-shape.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-font.cc harfbuzz-2.1.3-nocopyright/src/hb-font.cc
+--- harfbuzz-2.1.3/src/hb-font.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-font.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-font.h harfbuzz-2.1.3-nocopyright/src/hb-font.h
+--- harfbuzz-2.1.3/src/hb-font.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-font.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
++ * Copyright  2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-font.hh harfbuzz-2.1.3-nocopyright/src/hb-font.hh
+--- harfbuzz-2.1.3/src/hb-font.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-font.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ft.cc harfbuzz-2.1.3-nocopyright/src/hb-ft.cc
+--- harfbuzz-2.1.3/src/hb-ft.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ft.cc	2018-11-27 04:54:16.101817203 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2009  Keith Stribley
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2009  Keith Stribley
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ft.h harfbuzz-2.1.3-nocopyright/src/hb-ft.h
+--- harfbuzz-2.1.3/src/hb-ft.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ft.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-glib.cc harfbuzz-2.1.3-nocopyright/src/hb-glib.cc
+--- harfbuzz-2.1.3/src/hb-glib.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-glib.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-glib.h harfbuzz-2.1.3-nocopyright/src/hb-glib.h
+--- harfbuzz-2.1.3/src/hb-glib.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-glib.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-gobject-enums.cc.tmpl harfbuzz-2.1.3-nocopyright/src/hb-gobject-enums.cc.tmpl
+--- harfbuzz-2.1.3/src/hb-gobject-enums.cc.tmpl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-gobject-enums.cc.tmpl	2018-11-27 04:54:16.149818734 -0800
+@@ -1,6 +1,6 @@
+ /*** BEGIN file-header ***/
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-gobject-enums.h.tmpl harfbuzz-2.1.3-nocopyright/src/hb-gobject-enums.h.tmpl
+--- harfbuzz-2.1.3/src/hb-gobject-enums.h.tmpl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-gobject-enums.h.tmpl	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*** BEGIN file-header ***/
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-gobject.h harfbuzz-2.1.3-nocopyright/src/hb-gobject.h
+--- harfbuzz-2.1.3/src/hb-gobject.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-gobject.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-gobject-structs.cc harfbuzz-2.1.3-nocopyright/src/hb-gobject-structs.cc
+--- harfbuzz-2.1.3/src/hb-gobject-structs.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-gobject-structs.cc	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-gobject-structs.h harfbuzz-2.1.3-nocopyright/src/hb-gobject-structs.h
+--- harfbuzz-2.1.3/src/hb-gobject-structs.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-gobject-structs.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-graphite2.cc harfbuzz-2.1.3-nocopyright/src/hb-graphite2.cc
+--- harfbuzz-2.1.3/src/hb-graphite2.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-graphite2.cc	2018-11-27 04:54:16.097817077 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2011  Martin Hosken
+- * Copyright © 2011  SIL International
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011  Martin Hosken
++ * Copyright  2011  SIL International
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-graphite2.h harfbuzz-2.1.3-nocopyright/src/hb-graphite2.h
+--- harfbuzz-2.1.3/src/hb-graphite2.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-graphite2.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2011  Martin Hosken
+- * Copyright © 2011  SIL International
++ * Copyright  2011  Martin Hosken
++ * Copyright  2011  SIL International
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb.h harfbuzz-2.1.3-nocopyright/src/hb.h
+--- harfbuzz-2.1.3/src/hb.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
++ * Copyright  2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb.hh harfbuzz-2.1.3-nocopyright/src/hb.hh
+--- harfbuzz-2.1.3/src/hb.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-icu.cc harfbuzz-2.1.3-nocopyright/src/hb-icu.cc
+--- harfbuzz-2.1.3/src/hb-icu.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-icu.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2009  Keith Stribley
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2009  Keith Stribley
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-icu.h harfbuzz-2.1.3-nocopyright/src/hb-icu.h
+--- harfbuzz-2.1.3/src/hb-icu.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-icu.h	2018-11-27 04:54:16.133818224 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-iter.hh harfbuzz-2.1.3-nocopyright/src/hb-iter.hh
+--- harfbuzz-2.1.3/src/hb-iter.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-iter.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-kern.hh harfbuzz-2.1.3-nocopyright/src/hb-kern.hh
+--- harfbuzz-2.1.3/src/hb-kern.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-kern.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-machinery.hh harfbuzz-2.1.3-nocopyright/src/hb-machinery.hh
+--- harfbuzz-2.1.3/src/hb-machinery.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-machinery.hh	2018-11-27 04:54:16.101817203 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009,2010  Red Hat, Inc.
+- * Copyright © 2012,2018  Google, Inc.
++ * Copyright  2007,2008,2009,2010  Red Hat, Inc.
++ * Copyright  2012,2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-map.cc harfbuzz-2.1.3-nocopyright/src/hb-map.cc
+--- harfbuzz-2.1.3/src/hb-map.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-map.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-map.h harfbuzz-2.1.3-nocopyright/src/hb-map.h
+--- harfbuzz-2.1.3/src/hb-map.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-map.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-map.hh harfbuzz-2.1.3-nocopyright/src/hb-map.hh
+--- harfbuzz-2.1.3/src/hb-map.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-map.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-mutex.hh harfbuzz-2.1.3-nocopyright/src/hb-mutex.hh
+--- harfbuzz-2.1.3/src/hb-mutex.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-mutex.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2007  Chris Wilson
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2007  Chris Wilson
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-null.hh harfbuzz-2.1.3-nocopyright/src/hb-null.hh
+--- harfbuzz-2.1.3/src/hb-null.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-null.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-object.hh harfbuzz-2.1.3-nocopyright/src/hb-object.hh
+--- harfbuzz-2.1.3/src/hb-object.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-object.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2007  Chris Wilson
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2007  Chris Wilson
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-open-file.hh harfbuzz-2.1.3-nocopyright/src/hb-open-file.hh
+--- harfbuzz-2.1.3/src/hb-open-file.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-open-file.hh	2018-11-27 04:54:16.089816823 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-open-type.hh harfbuzz-2.1.3-nocopyright/src/hb-open-type.hh
+--- harfbuzz-2.1.3/src/hb-open-type.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-open-type.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009,2010  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2007,2008,2009,2010  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-cmap-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-cmap-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-cmap-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-cmap-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2014  Google, Inc.
++ * Copyright  2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color-cbdt-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-color-cbdt-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-color-cbdt-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color-cbdt-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2016  Google, Inc.
++ * Copyright  2016  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-color.cc
+--- harfbuzz-2.1.3/src/hb-ot-color.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2016  Google, Inc.
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2016  Google, Inc.
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color-colr-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-color-colr-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-color-colr-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color-colr-table.hh	2018-11-27 04:54:16.061815928 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color-cpal-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-color-cpal-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-color-cpal-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color-cpal-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2016  Google, Inc.
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2016  Google, Inc.
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color.h harfbuzz-2.1.3-nocopyright/src/hb-ot-color.h
+--- harfbuzz-2.1.3/src/hb-ot-color.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color.h	2018-11-27 04:54:16.133818224 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2016  Google, Inc.
+- * Copyright © 2018  Khaled Hosny
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2016  Google, Inc.
++ * Copyright  2018  Khaled Hosny
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color-sbix-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-color-sbix-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-color-sbix-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color-sbix-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-color-svg-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-color-svg-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-color-svg-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-color-svg-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-face.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-face.cc
+--- harfbuzz-2.1.3/src/hb-ot-face.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-face.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-face.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-face.hh
+--- harfbuzz-2.1.3/src/hb-ot-face.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-face.hh	2018-11-27 04:54:16.089816823 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2012,2013  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-font.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-font.cc
+--- harfbuzz-2.1.3/src/hb-ot-font.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-font.cc	2018-11-27 04:54:16.201820391 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2014  Google, Inc.
++ * Copyright  2011,2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-font.h harfbuzz-2.1.3-nocopyright/src/hb-ot-font.h
+--- harfbuzz-2.1.3/src/hb-ot-font.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-font.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2014  Google, Inc.
++ * Copyright  2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-glyf-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-glyf-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-glyf-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-glyf-table.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot.h harfbuzz-2.1.3-nocopyright/src/hb-ot.h
+--- harfbuzz-2.1.3/src/hb-ot.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
++ * Copyright  2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-hdmx-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-hdmx-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-hdmx-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-hdmx-table.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-head-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-head-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-head-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-head-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2010  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2010  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-hhea-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-hhea-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-hhea-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-hhea-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-hmtx-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-hmtx-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-hmtx-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-hmtx-table.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-kern-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-kern-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-kern-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-kern-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-base-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-base-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-base-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-base-table.hh	2018-11-27 04:54:16.089816823 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2016 Elie Roux <elie.roux@telecom-bretagne.eu>
+- * Copyright © 2018  Google, Inc.
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2016 Elie Roux <elie.roux@telecom-bretagne.eu>
++ * Copyright  2018  Google, Inc.
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-layout.cc
+--- harfbuzz-2.1.3/src/hb-ot-layout.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout.cc	2018-11-27 04:54:16.097817077 -0800
+@@ -1,8 +1,8 @@
+ /*
+- * Copyright © 1998-2004  David Turner and Werner Lemberg
+- * Copyright © 2006  Behdad Esfahbod
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2012,2013  Google, Inc.
++ * Copyright  1998-2004  David Turner and Werner Lemberg
++ * Copyright  2006  Behdad Esfahbod
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-common.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-common.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-common.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-common.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2010,2012  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2010,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-gdef-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gdef-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-gdef-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gdef-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2010,2011,2012  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2010,2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-gpos-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gpos-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-gpos-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gpos-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2012,2013  Google, Inc.
++ * Copyright  2007,2008,2009,2010  Red Hat, Inc.
++ * Copyright  2010,2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-gsubgpos.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gsubgpos.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-gsubgpos.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gsubgpos.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2012  Google, Inc.
++ * Copyright  2007,2008,2009,2010  Red Hat, Inc.
++ * Copyright  2010,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-gsub-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gsub-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-gsub-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-gsub-table.hh	2018-11-27 04:54:16.101817203 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2012,2013  Google, Inc.
++ * Copyright  2007,2008,2009,2010  Red Hat, Inc.
++ * Copyright  2010,2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout.h harfbuzz-2.1.3-nocopyright/src/hb-ot-layout.h
+--- harfbuzz-2.1.3/src/hb-ot-layout.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
+- * Copyright © 2012,2013  Google, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
++ * Copyright  2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-layout-jstf-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-jstf-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-layout-jstf-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-layout-jstf-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-map.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-map.cc
+--- harfbuzz-2.1.3/src/hb-ot-map.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-map.cc	2018-11-27 04:54:16.061815928 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2011,2013  Google, Inc.
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2010,2011,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-map.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-map.hh
+--- harfbuzz-2.1.3/src/hb-ot-map.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-map.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2011,2012,2013  Google, Inc.
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2010,2011,2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-math.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-math.cc
+--- harfbuzz-2.1.3/src/hb-ot-math.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-math.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2016  Igalia S.L.
++ * Copyright  2016  Igalia S.L.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-math.h harfbuzz-2.1.3-nocopyright/src/hb-ot-math.h
+--- harfbuzz-2.1.3/src/hb-ot-math.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-math.h	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2016  Igalia S.L.
++ * Copyright  2016  Igalia S.L.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-math-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-math-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-math-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-math-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2016  Igalia S.L.
++ * Copyright  2016  Igalia S.L.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-maxp-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-maxp-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-maxp-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-maxp-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-name.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-name.cc
+--- harfbuzz-2.1.3/src/hb-ot-name.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-name.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-name.h harfbuzz-2.1.3-nocopyright/src/hb-ot-name.h
+--- harfbuzz-2.1.3/src/hb-ot-name.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-name.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi.
++ * Copyright  2018  Ebrahim Byagowi.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-name-language.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-name-language.cc
+--- harfbuzz-2.1.3/src/hb-ot-name-language.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-name-language.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-name-language.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-name-language.hh
+--- harfbuzz-2.1.3/src/hb-ot-name-language.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-name-language.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-name-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-name-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-name-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-name-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-os2-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-os2-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-os2-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-os2-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-os2-unicode-ranges.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-os2-unicode-ranges.hh
+--- harfbuzz-2.1.3/src/hb-ot-os2-unicode-ranges.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-os2-unicode-ranges.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-post-macroman.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-post-macroman.hh
+--- harfbuzz-2.1.3/src/hb-ot-post-macroman.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-post-macroman.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-post-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-post-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-post-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-post-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2016  Google, Inc.
++ * Copyright  2016  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape.cc	2018-11-27 04:54:16.097817077 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009,2010  Red Hat, Inc.
+- * Copyright © 2010,2011,2012  Google, Inc.
++ * Copyright  2009,2010  Red Hat, Inc.
++ * Copyright  2010,2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2012  Google, Inc.
++ * Copyright  2010,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic-fallback.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic-fallback.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic-fallback.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic-fallback.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2015  Mozilla Foundation.
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2015  Mozilla Foundation.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic-win1256.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic-win1256.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-arabic-win1256.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-arabic-win1256.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2014  Google, Inc.
++ * Copyright  2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-default.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-default.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-default.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-default.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2012  Google, Inc.
++ * Copyright  2010,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-hangul.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-hangul.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-hangul.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-hangul.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-hebrew.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-hebrew.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-hebrew.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-hebrew.cc	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2012  Google, Inc.
++ * Copyright  2010,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2011,2012  Google, Inc.
++ * Copyright  2010,2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-indic.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-indic.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic.cc	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-indic.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-indic.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-indic-machine.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic-machine.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-indic-machine.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic-machine.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,7 +1,7 @@
+ 
+ #line 1 "hb-ot-shape-complex-indic-machine.rl"
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-indic-machine.rl harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic-machine.rl
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-indic-machine.rl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-indic-machine.rl	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer-machine.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer-machine.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer-machine.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer-machine.hh	2018-11-27 04:54:16.057815801 -0800
+@@ -1,7 +1,7 @@
+ 
+ #line 1 "hb-ot-shape-complex-khmer-machine.rl"
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer-machine.rl harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer-machine.rl
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-khmer-machine.rl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-khmer-machine.rl	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012,2013  Google, Inc.
++ * Copyright  2011,2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar-machine.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar-machine.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar-machine.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar-machine.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,7 +1,7 @@
+ 
+ #line 1 "hb-ot-shape-complex-myanmar-machine.rl"
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar-machine.rl harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar-machine.rl
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-myanmar-machine.rl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-myanmar-machine.rl	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-thai.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-thai.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-thai.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-thai.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2012  Google, Inc.
++ * Copyright  2010,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-use.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-use.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use.cc	2018-11-27 04:54:16.097817077 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2015  Mozilla Foundation.
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2015  Mozilla Foundation.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-use.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-use.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2015  Mozilla Foundation.
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2015  Mozilla Foundation.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-use-machine.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use-machine.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-use-machine.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use-machine.hh	2018-11-27 04:54:16.089816823 -0800
+@@ -1,8 +1,8 @@
+ 
+ #line 1 "hb-ot-shape-complex-use-machine.rl"
+ /*
+- * Copyright © 2015  Mozilla Foundation.
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2015  Mozilla Foundation.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-use-machine.rl harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use-machine.rl
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-use-machine.rl	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-use-machine.rl	2018-11-27 04:54:16.145818606 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2015  Mozilla Foundation.
+- * Copyright © 2015  Google, Inc.
++ * Copyright  2015  Mozilla Foundation.
++ * Copyright  2015  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-complex-vowel-constraints.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-vowel-constraints.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-complex-vowel-constraints.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-complex-vowel-constraints.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-fallback.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-fallback.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-fallback.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-fallback.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-fallback.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-fallback.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-fallback.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-fallback.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape.h harfbuzz-2.1.3-nocopyright/src/hb-ot-shape.h
+--- harfbuzz-2.1.3/src/hb-ot-shape.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Red Hat, Inc.
++ * Copyright  2013  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010  Google, Inc.
++ * Copyright  2010  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-normalize.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-normalize.cc
+--- harfbuzz-2.1.3/src/hb-ot-shape-normalize.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-normalize.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-shape-normalize.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-normalize.hh
+--- harfbuzz-2.1.3/src/hb-ot-shape-normalize.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-shape-normalize.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-stat-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-stat-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-stat-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-stat-table.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-tag.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-tag.cc
+--- harfbuzz-2.1.3/src/hb-ot-tag.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-tag.cc	2018-11-27 04:54:16.057815801 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-var-avar-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-var-avar-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-var-avar-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-var-avar-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-var.cc harfbuzz-2.1.3-nocopyright/src/hb-ot-var.cc
+--- harfbuzz-2.1.3/src/hb-ot-var.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-var.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-var-fvar-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-var-fvar-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-var-fvar-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-var-fvar-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-var.h harfbuzz-2.1.3-nocopyright/src/hb-ot-var.h
+--- harfbuzz-2.1.3/src/hb-ot-var.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-var.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-var-hvar-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-var-hvar-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-var-hvar-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-var-hvar-table.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-var-mvar-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-var-mvar-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-var-mvar-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-var-mvar-table.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-ot-vorg-table.hh harfbuzz-2.1.3-nocopyright/src/hb-ot-vorg-table.hh
+--- harfbuzz-2.1.3/src/hb-ot-vorg-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-ot-vorg-table.hh	2018-11-27 04:54:16.057815801 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018 Adobe Systems Incorporated.
++ * Copyright  2018 Adobe Systems Incorporated.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-set.cc harfbuzz-2.1.3-nocopyright/src/hb-set.cc
+--- harfbuzz-2.1.3/src/hb-set.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-set.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-set-digest.hh harfbuzz-2.1.3-nocopyright/src/hb-set-digest.hh
+--- harfbuzz-2.1.3/src/hb-set-digest.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-set-digest.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-set.h harfbuzz-2.1.3-nocopyright/src/hb-set.h
+--- harfbuzz-2.1.3/src/hb-set.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-set.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-set.hh harfbuzz-2.1.3-nocopyright/src/hb-set.hh
+--- harfbuzz-2.1.3/src/hb-set.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-set.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012,2017  Google, Inc.
++ * Copyright  2012,2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shape.cc harfbuzz-2.1.3-nocopyright/src/hb-shape.cc
+--- harfbuzz-2.1.3/src/hb-shape.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shape.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shape.h harfbuzz-2.1.3-nocopyright/src/hb-shape.h
+--- harfbuzz-2.1.3/src/hb-shape.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shape.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shape-plan.cc harfbuzz-2.1.3-nocopyright/src/hb-shape-plan.cc
+--- harfbuzz-2.1.3/src/hb-shape-plan.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shape-plan.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shape-plan.h harfbuzz-2.1.3-nocopyright/src/hb-shape-plan.h
+--- harfbuzz-2.1.3/src/hb-shape-plan.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shape-plan.h	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shape-plan.hh harfbuzz-2.1.3-nocopyright/src/hb-shape-plan.hh
+--- harfbuzz-2.1.3/src/hb-shape-plan.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shape-plan.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012,2018  Google, Inc.
++ * Copyright  2012,2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shaper.cc harfbuzz-2.1.3-nocopyright/src/hb-shaper.cc
+--- harfbuzz-2.1.3/src/hb-shaper.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shaper.cc	2018-11-27 04:54:16.057815801 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shaper.hh harfbuzz-2.1.3-nocopyright/src/hb-shaper.hh
+--- harfbuzz-2.1.3/src/hb-shaper.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shaper.hh	2018-11-27 04:54:16.057815801 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shaper-impl.hh harfbuzz-2.1.3-nocopyright/src/hb-shaper-impl.hh
+--- harfbuzz-2.1.3/src/hb-shaper-impl.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shaper-impl.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-shaper-list.hh harfbuzz-2.1.3-nocopyright/src/hb-shaper-list.hh
+--- harfbuzz-2.1.3/src/hb-shaper-list.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-shaper-list.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-static.cc harfbuzz-2.1.3-nocopyright/src/hb-static.cc
+--- harfbuzz-2.1.3/src/hb-static.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-static.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-string-array.hh harfbuzz-2.1.3-nocopyright/src/hb-string-array.hh
+--- harfbuzz-2.1.3/src/hb-string-array.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-string-array.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017  Google, Inc.
++ * Copyright  2017  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset.cc harfbuzz-2.1.3-nocopyright/src/hb-subset.cc
+--- harfbuzz-2.1.3/src/hb-subset.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset-glyf.cc harfbuzz-2.1.3-nocopyright/src/hb-subset-glyf.cc
+--- harfbuzz-2.1.3/src/hb-subset-glyf.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset-glyf.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset-glyf.hh harfbuzz-2.1.3-nocopyright/src/hb-subset-glyf.hh
+--- harfbuzz-2.1.3/src/hb-subset-glyf.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset-glyf.hh	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset.h harfbuzz-2.1.3-nocopyright/src/hb-subset.h
+--- harfbuzz-2.1.3/src/hb-subset.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset.h	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset.hh harfbuzz-2.1.3-nocopyright/src/hb-subset.hh
+--- harfbuzz-2.1.3/src/hb-subset.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset.hh	2018-11-27 04:54:16.101817203 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset-input.cc harfbuzz-2.1.3-nocopyright/src/hb-subset-input.cc
+--- harfbuzz-2.1.3/src/hb-subset-input.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset-input.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset-input.hh harfbuzz-2.1.3-nocopyright/src/hb-subset-input.hh
+--- harfbuzz-2.1.3/src/hb-subset-input.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset-input.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset-plan.cc harfbuzz-2.1.3-nocopyright/src/hb-subset-plan.cc
+--- harfbuzz-2.1.3/src/hb-subset-plan.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset-plan.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-subset-plan.hh harfbuzz-2.1.3-nocopyright/src/hb-subset-plan.hh
+--- harfbuzz-2.1.3/src/hb-subset-plan.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-subset-plan.hh	2018-11-27 04:54:16.097817077 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-unicode.cc harfbuzz-2.1.3-nocopyright/src/hb-unicode.cc
+--- harfbuzz-2.1.3/src/hb-unicode.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-unicode.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Codethink Limited
+- * Copyright © 2010,2011,2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Codethink Limited
++ * Copyright  2010,2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-unicode-emoji-table.hh harfbuzz-2.1.3-nocopyright/src/hb-unicode-emoji-table.hh
+--- harfbuzz-2.1.3/src/hb-unicode-emoji-table.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-unicode-emoji-table.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -8,7 +8,7 @@
+  *
+  * # emoji-data.txt
+  * # Date: 2018-02-07, 07:55:18 GMT
+- * # © 2018 Unicode®, Inc.
++ * #  2018 Unicode®, Inc.
+  * # Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+  * # For terms of use, see http://www.unicode.org/terms_of_use.html
+  * #
+diff -Nur harfbuzz-2.1.3/src/hb-unicode.h harfbuzz-2.1.3-nocopyright/src/hb-unicode.h
+--- harfbuzz-2.1.3/src/hb-unicode.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-unicode.h	2018-11-27 04:54:16.101817203 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Codethink Limited
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Codethink Limited
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-unicode.hh harfbuzz-2.1.3-nocopyright/src/hb-unicode.hh
+--- harfbuzz-2.1.3/src/hb-unicode.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-unicode.hh	2018-11-27 04:54:16.141818478 -0800
+@@ -1,7 +1,7 @@
+ /*
+- * Copyright © 2009  Red Hat, Inc.
+- * Copyright © 2011  Codethink Limited
+- * Copyright © 2010,2011,2012  Google, Inc.
++ * Copyright  2009  Red Hat, Inc.
++ * Copyright  2011  Codethink Limited
++ * Copyright  2010,2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-uniscribe.cc harfbuzz-2.1.3-nocopyright/src/hb-uniscribe.cc
+--- harfbuzz-2.1.3/src/hb-uniscribe.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-uniscribe.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012,2013  Google, Inc.
++ * Copyright  2011,2012,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-uniscribe.h harfbuzz-2.1.3-nocopyright/src/hb-uniscribe.h
+--- harfbuzz-2.1.3/src/hb-uniscribe.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-uniscribe.h	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-utf.hh harfbuzz-2.1.3-nocopyright/src/hb-utf.hh
+--- harfbuzz-2.1.3/src/hb-utf.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-utf.hh	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012,2014  Google, Inc.
++ * Copyright  2011,2012,2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-vector.hh harfbuzz-2.1.3-nocopyright/src/hb-vector.hh
+--- harfbuzz-2.1.3/src/hb-vector.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-vector.hh	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2017,2018  Google, Inc.
++ * Copyright  2017,2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-version.h harfbuzz-2.1.3-nocopyright/src/hb-version.h
+--- harfbuzz-2.1.3/src/hb-version.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-version.h	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-version.h.in harfbuzz-2.1.3-nocopyright/src/hb-version.h.in
+--- harfbuzz-2.1.3/src/hb-version.h.in	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-version.h.in	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/hb-warning.cc harfbuzz-2.1.3-nocopyright/src/hb-warning.cc
+--- harfbuzz-2.1.3/src/hb-warning.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/hb-warning.cc	2018-11-27 04:54:16.101817203 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/main.cc harfbuzz-2.1.3-nocopyright/src/main.cc
+--- harfbuzz-2.1.3/src/main.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/main.cc	2018-11-27 04:54:16.057815801 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2007,2008,2009  Red Hat, Inc.
++ * Copyright  2007,2008,2009  Red Hat, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test-buffer-serialize.cc harfbuzz-2.1.3-nocopyright/src/test-buffer-serialize.cc
+--- harfbuzz-2.1.3/src/test-buffer-serialize.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test-buffer-serialize.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2011,2013  Google, Inc.
++ * Copyright  2010,2011,2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test.cc harfbuzz-2.1.3-nocopyright/src/test.cc
+--- harfbuzz-2.1.3/src/test.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test.cc	2018-11-27 04:54:16.133818224 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2011  Google, Inc.
++ * Copyright  2010,2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test-name-table.cc harfbuzz-2.1.3-nocopyright/src/test-name-table.cc
+--- harfbuzz-2.1.3/src/test-name-table.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test-name-table.cc	2018-11-27 04:54:16.089816823 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test-ot-color.cc harfbuzz-2.1.3-nocopyright/src/test-ot-color.cc
+--- harfbuzz-2.1.3/src/test-ot-color.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test-ot-color.cc	2018-11-27 04:54:16.141818478 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
+- * Copyright © 2018  Khaled Hosny
++ * Copyright  2018  Ebrahim Byagowi
++ * Copyright  2018  Khaled Hosny
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test-size-params.cc harfbuzz-2.1.3-nocopyright/src/test-size-params.cc
+--- harfbuzz-2.1.3/src/test-size-params.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test-size-params.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2011  Google, Inc.
++ * Copyright  2010,2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test-unicode-ranges.cc harfbuzz-2.1.3-nocopyright/src/test-unicode-ranges.cc
+--- harfbuzz-2.1.3/src/test-unicode-ranges.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test-unicode-ranges.cc	2018-11-27 04:54:16.093816950 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/src/test-would-substitute.cc harfbuzz-2.1.3-nocopyright/src/test-would-substitute.cc
+--- harfbuzz-2.1.3/src/test-would-substitute.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/src/test-would-substitute.cc	2018-11-27 04:54:16.137818352 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2010,2011  Google, Inc.
++ * Copyright  2010,2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/hb-subset-test.h harfbuzz-2.1.3-nocopyright/test/api/hb-subset-test.h
+--- harfbuzz-2.1.3/test/api/hb-subset-test.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/hb-subset-test.h	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/hb-test.h harfbuzz-2.1.3-nocopyright/test/api/hb-test.h
+--- harfbuzz-2.1.3/test/api/hb-test.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/hb-test.h	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-baseline.c harfbuzz-2.1.3-nocopyright/test/api/test-baseline.c
+--- harfbuzz-2.1.3/test/api/test-baseline.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-baseline.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-blob.c harfbuzz-2.1.3-nocopyright/test/api/test-blob.c
+--- harfbuzz-2.1.3/test/api/test-blob.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-blob.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-buffer.c harfbuzz-2.1.3-nocopyright/test/api/test-buffer.c
+--- harfbuzz-2.1.3/test/api/test-buffer.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-buffer.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-c.c harfbuzz-2.1.3-nocopyright/test/api/test-c.c
+--- harfbuzz-2.1.3/test/api/test-c.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-c.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-collect-unicodes.c harfbuzz-2.1.3-nocopyright/test/api/test-collect-unicodes.c
+--- harfbuzz-2.1.3/test/api/test-collect-unicodes.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-collect-unicodes.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-common.c harfbuzz-2.1.3-nocopyright/test/api/test-common.c
+--- harfbuzz-2.1.3/test/api/test-common.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-common.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-cplusplus.cc harfbuzz-2.1.3-nocopyright/test/api/test-cplusplus.cc
+--- harfbuzz-2.1.3/test/api/test-cplusplus.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-cplusplus.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-font.c harfbuzz-2.1.3-nocopyright/test/api/test-font.c
+--- harfbuzz-2.1.3/test/api/test-font.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-font.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-map.c harfbuzz-2.1.3-nocopyright/test/api/test-map.c
+--- harfbuzz-2.1.3/test/api/test-map.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-map.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-multithread.c harfbuzz-2.1.3-nocopyright/test/api/test-multithread.c
+--- harfbuzz-2.1.3/test/api/test-multithread.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-multithread.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-object.c harfbuzz-2.1.3-nocopyright/test/api/test-object.c
+--- harfbuzz-2.1.3/test/api/test-object.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-object.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-ot-color.c harfbuzz-2.1.3-nocopyright/test/api/test-ot-color.c
+--- harfbuzz-2.1.3/test/api/test-ot-color.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-ot-color.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2016  Google, Inc.
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2016  Google, Inc.
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-ot-face.c harfbuzz-2.1.3-nocopyright/test/api/test-ot-face.c
+--- harfbuzz-2.1.3/test/api/test-ot-face.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-ot-face.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-ot-ligature-carets.c harfbuzz-2.1.3-nocopyright/test/api/test-ot-ligature-carets.c
+--- harfbuzz-2.1.3/test/api/test-ot-ligature-carets.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-ot-ligature-carets.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-ot-math.c harfbuzz-2.1.3-nocopyright/test/api/test-ot-math.c
+--- harfbuzz-2.1.3/test/api/test-ot-math.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-ot-math.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2016  Igalia S.L.
++ * Copyright  2016  Igalia S.L.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-ot-name.c harfbuzz-2.1.3-nocopyright/test/api/test-ot-name.c
+--- harfbuzz-2.1.3/test/api/test-ot-name.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-ot-name.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Ebrahim Byagowi
++ * Copyright  2018  Ebrahim Byagowi
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-ot-tag.c harfbuzz-2.1.3-nocopyright/test/api/test-ot-tag.c
+--- harfbuzz-2.1.3/test/api/test-ot-tag.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-ot-tag.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-set.c harfbuzz-2.1.3-nocopyright/test/api/test-set.c
+--- harfbuzz-2.1.3/test/api/test-set.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-set.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2013  Google, Inc.
++ * Copyright  2013  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-shape.c harfbuzz-2.1.3-nocopyright/test/api/test-shape.c
+--- harfbuzz-2.1.3/test/api/test-shape.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-shape.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset.c harfbuzz-2.1.3-nocopyright/test/api/test-subset.c
+--- harfbuzz-2.1.3/test/api/test-subset.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-cmap.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-cmap.c
+--- harfbuzz-2.1.3/test/api/test-subset-cmap.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-cmap.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-glyf.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-glyf.c
+--- harfbuzz-2.1.3/test/api/test-subset-glyf.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-glyf.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-hdmx.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-hdmx.c
+--- harfbuzz-2.1.3/test/api/test-subset-hdmx.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-hdmx.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-hmtx.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-hmtx.c
+--- harfbuzz-2.1.3/test/api/test-subset-hmtx.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-hmtx.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-os2.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-os2.c
+--- harfbuzz-2.1.3/test/api/test-subset-os2.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-os2.c	2018-11-27 04:54:16.149818734 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-post.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-post.c
+--- harfbuzz-2.1.3/test/api/test-subset-post.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-post.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-subset-vmtx.c harfbuzz-2.1.3-nocopyright/test/api/test-subset-vmtx.c
+--- harfbuzz-2.1.3/test/api/test-subset-vmtx.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-subset-vmtx.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2018  Google, Inc.
++ * Copyright  2018  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-unicode.c harfbuzz-2.1.3-nocopyright/test/api/test-unicode.c
+--- harfbuzz-2.1.3/test/api/test-unicode.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-unicode.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2011  Codethink Limited
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Codethink Limited
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/test/api/test-version.c harfbuzz-2.1.3-nocopyright/test/api/test-version.c
+--- harfbuzz-2.1.3/test/api/test-version.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/test/api/test-version.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/ansi-print.cc harfbuzz-2.1.3-nocopyright/util/ansi-print.cc
+--- harfbuzz-2.1.3/util/ansi-print.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/ansi-print.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/ansi-print.hh harfbuzz-2.1.3-nocopyright/util/ansi-print.hh
+--- harfbuzz-2.1.3/util/ansi-print.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/ansi-print.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/hb-fc.cc harfbuzz-2.1.3-nocopyright/util/hb-fc.cc
+--- harfbuzz-2.1.3/util/hb-fc.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-fc.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2014  Google, Inc.
++ * Copyright  2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/hb-fc.h harfbuzz-2.1.3-nocopyright/util/hb-fc.h
+--- harfbuzz-2.1.3/util/hb-fc.h	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-fc.h	2018-11-27 04:54:16.057815801 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2014  Google, Inc.
++ * Copyright  2014  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/hb-fc-list.c harfbuzz-2.1.3-nocopyright/util/hb-fc-list.c
+--- harfbuzz-2.1.3/util/hb-fc-list.c	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-fc-list.c	2018-11-27 04:54:16.145818606 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2002 Keith Packard
+- * Copyright © 2014  Google, Inc.
++ * Copyright  2002 Keith Packard
++ * Copyright  2014  Google, Inc.
+  *
+  * Permission to use, copy, modify, distribute, and sell this software and its
+  * documentation for any purpose is hereby granted without fee, provided that
+diff -Nur harfbuzz-2.1.3/util/hb-ot-shape-closure.cc harfbuzz-2.1.3-nocopyright/util/hb-ot-shape-closure.cc
+--- harfbuzz-2.1.3/util/hb-ot-shape-closure.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-ot-shape-closure.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/hb-shape.cc harfbuzz-2.1.3-nocopyright/util/hb-shape.cc
+--- harfbuzz-2.1.3/util/hb-shape.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-shape.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2010  Behdad Esfahbod
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2010  Behdad Esfahbod
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/hb-subset.cc harfbuzz-2.1.3-nocopyright/util/hb-subset.cc
+--- harfbuzz-2.1.3/util/hb-subset.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-subset.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2010  Behdad Esfahbod
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2010  Behdad Esfahbod
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/hb-view.cc harfbuzz-2.1.3-nocopyright/util/hb-view.cc
+--- harfbuzz-2.1.3/util/hb-view.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/hb-view.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,6 +1,6 @@
+ /*
+- * Copyright © 2010  Behdad Esfahbod
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2010  Behdad Esfahbod
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/helper-cairo-ansi.cc harfbuzz-2.1.3-nocopyright/util/helper-cairo-ansi.cc
+--- harfbuzz-2.1.3/util/helper-cairo-ansi.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/helper-cairo-ansi.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/helper-cairo-ansi.hh harfbuzz-2.1.3-nocopyright/util/helper-cairo-ansi.hh
+--- harfbuzz-2.1.3/util/helper-cairo-ansi.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/helper-cairo-ansi.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2012  Google, Inc.
++ * Copyright  2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/helper-cairo.cc harfbuzz-2.1.3-nocopyright/util/helper-cairo.cc
+--- harfbuzz-2.1.3/util/helper-cairo.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/helper-cairo.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/helper-cairo.hh harfbuzz-2.1.3-nocopyright/util/helper-cairo.hh
+--- harfbuzz-2.1.3/util/helper-cairo.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/helper-cairo.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/main-font-text.hh harfbuzz-2.1.3-nocopyright/util/main-font-text.hh
+--- harfbuzz-2.1.3/util/main-font-text.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/main-font-text.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/options.cc harfbuzz-2.1.3-nocopyright/util/options.cc
+--- harfbuzz-2.1.3/util/options.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/options.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/options.hh harfbuzz-2.1.3-nocopyright/util/options.hh
+--- harfbuzz-2.1.3/util/options.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/options.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/shape-consumer.hh harfbuzz-2.1.3-nocopyright/util/shape-consumer.hh
+--- harfbuzz-2.1.3/util/shape-consumer.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/shape-consumer.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011,2012  Google, Inc.
++ * Copyright  2011,2012  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/view-cairo.cc harfbuzz-2.1.3-nocopyright/util/view-cairo.cc
+--- harfbuzz-2.1.3/util/view-cairo.cc	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/view-cairo.cc	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
+diff -Nur harfbuzz-2.1.3/util/view-cairo.hh harfbuzz-2.1.3-nocopyright/util/view-cairo.hh
+--- harfbuzz-2.1.3/util/view-cairo.hh	2018-11-16 16:53:25.000000000 -0800
++++ harfbuzz-2.1.3-nocopyright/util/view-cairo.hh	2018-11-27 04:54:16.145818606 -0800
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright © 2011  Google, Inc.
++ * Copyright  2011  Google, Inc.
+  *
+  *  This is part of HarfBuzz, a text shaping library.
+  *
