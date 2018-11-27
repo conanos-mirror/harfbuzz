@@ -10,8 +10,9 @@ class TestPackageConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        if self.settings.os == "Linux":
-            cmake.definitions["CMAKE_MODULE_PATH"]=os.path.abspath(os.path.join(self.source_folder,".."))
+        cmake.definitions["CMAKE_MODULE_PATH"]=os.path.abspath(os.path.join(self.source_folder,".."))
+        if self.settings.os == "Windows":
+            cmake.definitions["CMAKE_MODULE_PATH"] = eval(repr(os.path.abspath(os.path.join(self.source_folder,".."))).replace('\\','\\\\'))
         cmake.configure()
         cmake.build()
 

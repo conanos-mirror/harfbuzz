@@ -11,7 +11,8 @@ class HarfbuzzConan(ConanFile):
     url = "https://github.com/conanos/harfbuzz"
     homepage = "http://harfbuzz.org/"
     license = "MIT"
-    exports = ["FindHarfBuzz.cmake", "LICENSE.md"]
+    patch = "copyright-character-gbk-encode-error.patch"
+    exports = ["FindHarfBuzz.cmake", "LICENSE.md", patch]
     generators = "cmake"
     settings = "os", "compiler", "build_type", "arch"
     options = {
@@ -51,6 +52,8 @@ class HarfbuzzConan(ConanFile):
     def source(self):
         url_ = 'https://github.com/harfbuzz/harfbuzz/archive/{version}.tar.gz'.format(version=self.version)
         tools.get(url_)
+        if self.settings.os == "Windows":
+            tools.patch(patch_file=self.patch)
         os.rename(self.name+"-"+self.version, self._source_subfolder)
 
     def configure_cmake(self):
@@ -62,9 +65,10 @@ class HarfbuzzConan(ConanFile):
 
         cmake.definitions["HB_HAVE_FREETYPE"] = self.options.with_freetype
         cmake.definitions["HB_HAVE_GLIB"] = True
-        cmake.definitions["HB_BUILD_UTILS"] = True
-        cmake.definitions["PC_CAIRO_INCLUDE_DIRS"] = os.path.join(self.deps_cpp_info["cairo"].rootpath, "include")
-        cmake.definitions["PC_CAIRO_LIBDIR"] = os.path.join(self.deps_cpp_info["cairo"].rootpath, "lib")
+        if self.settings.os == "Linux":
+            cmake.definitions["HB_BUILD_UTILS"] = True
+            cmake.definitions["PC_CAIRO_INCLUDE_DIRS"] = os.path.join(self.deps_cpp_info["cairo"].rootpath, "include")
+            cmake.definitions["PC_CAIRO_LIBDIR"] = os.path.join(self.deps_cpp_info["cairo"].rootpath, "lib")
         cmake.definitions["HB_HAVE_GOBJECT"] = True
         cmake.definitions["PC_glib_mkenums"] =  os.path.join(self.deps_cpp_info["glib"].rootpath, "bin") #for glib-mkenums
         cmake.definitions["BUILD_SHARED_LIBS"] = self.options.shared
@@ -78,10 +82,16 @@ class HarfbuzzConan(ConanFile):
         libpath=[ os.path.join(self.deps_cpp_info[i].rootpath, "lib") for i in ["bzip2", "libpng"] ]
         if self.settings.os == "Linux":
             tools.mkdir(os.path.join(self.build_folder, self._build_subfolder, "src"))
-        with tools.environment_append({
-            "LD_LIBRARY_PATH" : os.pathsep.join(libpath),
-            "CPLUS_INCLUDE_PATH" : include,
-            }):
+        if self.settings.os == "Linux":
+            env_vars = {
+                "LD_LIBRARY_PATH" : os.pathsep.join(libpath),
+                "CPLUS_INCLUDE_PATH" : include,
+                }
+        if self.settings.os == "Windows":
+            env_vars = {
+                "INCLUDE" : os.pathsep.join(include + [os.getenv('INCLUDE')]),
+                }
+        with tools.environment_append(env_vars):
             cmake = self.configure_cmake()
             cmake.build()
             cmake.install()
