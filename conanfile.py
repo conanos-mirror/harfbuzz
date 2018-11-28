@@ -37,6 +37,7 @@ class HarfbuzzConan(ConanFile):
         config_scheme(self)
     
     def build_requirements(self):
+        self.build_requires("libffi/3.299999@conanos/stable")
         if self.settings.os == "Linux":
             self.build_requires("bzip2/1.0.6@conanos/stable")
             self.build_requires("libpng/1.6.34@conanos/stable")
@@ -58,7 +59,7 @@ class HarfbuzzConan(ConanFile):
 
     def configure_cmake(self):
         cmake = CMake(self)
-        pkg_config_paths=[ os.path.join(self.deps_cpp_info[i].rootpath, "lib", "pkgconfig") for i in ["fontconfig","cairo","glib"] ]
+        pkg_config_paths=[ os.path.join(self.deps_cpp_info[i].rootpath, "lib", "pkgconfig") for i in ["fontconfig","cairo","glib","libffi"] ]
         if self.options.with_freetype:
             pkg_config_paths.extend([ os.path.join(self.deps_cpp_info[i].rootpath, "lib", "pkgconfig") for i in ["freetype"] ])
             cmake.definitions["CMAKE_PREFIX_PATH"] = os.path.join(self.deps_cpp_info["freetype"].rootpath)
