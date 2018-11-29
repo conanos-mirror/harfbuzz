@@ -96,6 +96,26 @@ class HarfbuzzConan(ConanFile):
             cmake = self.configure_cmake()
             cmake.build()
             cmake.install()
+    
+    def package(self):
+        pc_common = {
+            "%prefix%"      : self.package_folder,
+            "%exec_prefix%" : "${prefix}",
+            "%libdir%"      : "${prefix}/lib",
+            "%includedir%"  : "${prefix}/include",
+            "%VERSION%"     : self.version,
+        }
+
+        for pc in ['harfbuzz-gobject.pc.in', 'harfbuzz.pc.in']:
+            if pc == 'harfbuzz.pc.in':
+                pc_common.update({ "%libs_private%" : "",
+                                   "%requires_private%" : "" })
+            
+            for s, r in pc_common.items():
+                tools.replace_in_file(os.path.join(self.source_folder,self._source_subfolder,'src',pc),s,r)
+            tools.mkdir(os.path.join(self.package_folder, "lib", "pkgconfig"))
+            shutil.copy2(os.path.join(self.source_folder, self._source_subfolder,'src', pc),
+                         os.path.join(self.package_folder, "lib", "pkgconfig", pc[:-3]))
 
     def package_info(self):
         self.cpp_info.libs = tools.collect_libs(self)
