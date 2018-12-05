@@ -20,7 +20,7 @@ class HarfbuzzConan(ConanFile):
         'fPIC': [True, False],
         'with_freetype': [True, False]
     }
-    default_options = { 'shared': False, 'fPIC': True, 'with_freetype': True }
+    default_options = { 'shared': True, 'fPIC': True, 'with_freetype': True }
     generators = "cmake"
 
     _source_subfolder = "source_subfolder"
@@ -34,7 +34,6 @@ class HarfbuzzConan(ConanFile):
         self.requires.add("cairo/1.15.12@conanos/stable")
         self.requires.add("glib/2.58.1@conanos/stable")
 
-        config_scheme(self)
     
     def build_requirements(self):
         self.build_requires("libffi/3.299999@conanos/stable")
@@ -49,6 +48,7 @@ class HarfbuzzConan(ConanFile):
     
     def configure(self):
         del self.settings.compiler.libcxx
+        config_scheme(self)
 
     def source(self):
         url_ = 'https://github.com/harfbuzz/harfbuzz/archive/{version}.tar.gz'.format(version=self.version)
